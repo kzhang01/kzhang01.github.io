@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<svg version="1.1" width="150" height="150" xmlns="http://www.w3.org/2000/svg">
+    <title> Logo </title>
+
+    <circle class="c1" cx="75" cy="75" r="75" fill="white" />
+    <circle class="c1" cx="75" cy="75" r="72.5" fill="black" />
+
+    <circle class="c2" cx="55" cy="55" r="37.5" fill="white" />
+
+    <path class="p1" d="M 102.5 132.5 C 120 121.25, 120 121.25, 127.5 107.5" stroke="white" stroke-width="7.5"/>
+
+    <line x1="30" y1="75" x2="60" y2="82.5" stroke="black" stroke-width="5"/>
+
+    <text class="kz" x="37.5" y="52.5" transform="rotate(15)" fill="black" font-family="Comic Sans MS" font-size="42.5">KZ</text>
+
+</svg>
