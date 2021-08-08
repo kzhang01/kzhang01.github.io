@@ -4,14 +4,15 @@ import logo from "../assets/logo.svg";
 import { device } from "../utils/breakpoints";
 
 export default function Header() {
-    const Header = styled.section`
-        min-height: 3em;
-        padding: 4px 32px;
-
+    const Container = styled.section`
+        background-color: white;
         -webkit-box-shadow: 0 8px 6px -6px #999;
         -moz-box-shadow: 0 8px 6px -6px #999;
         box-shadow: 0 8px 6px -6px #999;
-
+    `;
+    const Header = styled.section`
+        margin: auto;
+        width: 70vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -23,6 +24,9 @@ export default function Header() {
 
         @media ${device.mobileL} {
             flex-direction: column;
+        }
+        @media ${device.tablet} {
+            width: 90vw;
         }
     `;
 
@@ -71,19 +75,20 @@ export default function Header() {
     `;
 
     return (
-        <Header>
-            <a href="#home">
-                <LogoContainer>
-                    <img src={logo} height="48px" width="48px" alt="logo"/>
-                    <h2>Karina Zhang</h2>
-                </LogoContainer>
-            </a>
-            <Links>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#experience">Work</a>
-                <a href="#projects">Projects</a>
-            </Links>
-        </Header>
+        <Container>
+            <Header>
+                <a href="#home">
+                    <LogoContainer>
+                        <img src={logo} height="48px" width="48px" alt="logo"/>
+                        <h2>Karina Zhang</h2>
+                    </LogoContainer>
+                </a>
+                <Links>
+                    <a href="#about">About</a>
+                    <a href="#experience">Work</a>
+                    <a href="#projects">Projects</a>
+                </Links>
+            </Header>
+        </Container>
     )
 }
