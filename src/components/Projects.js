@@ -5,25 +5,25 @@ import ProjectElements from "./ProjectElements";
 
 export default function Projects() {
   const ProjectsGrid = styled.section`
-    width: 70vw;
+    width: 80vw;
     margin: auto;
+    margin-bottom: 128px;
   `;
 
   const ProjectItem = styled.section`
     display: flex;
-    // align-items: center;
     margin: 16px;
     border: 8px solid black;
-    @media screen and ${device.tablet} {
-      flex-direction: column;
+    @media screen and ${device.laptop} {
+      flex-direction: column-reverse;
     }
   `;
 
   const Description = styled.section`
-    width: 100%;
+    width: 75%;
     margin-right: 64px;
     text-align: left;
-    padding: 64px 0px 64px 64px;
+    padding: 32px 0px 32px 32px;
     box-sizing: border-box;
     div {
       float: left;
@@ -44,7 +44,7 @@ export default function Projects() {
   const Image = styled.section`
     align-self: center;
     width: 100%;
-    height: 420px;
+    height: 450px;
     @media screen and ${device.mobileL} {
       height: 150px;
     }
