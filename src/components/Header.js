@@ -69,7 +69,7 @@ export default function Header() {
       height: 2px;
       bottom: 0;
       left: 0;
-      background-color: #73eba7;
+      background-color: #06D6A0;
       transform: scaleX(0);
       transition: transform 0.3s ease;
     }
