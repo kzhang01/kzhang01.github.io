@@ -7,7 +7,7 @@ export default function Projects() {
   const ProjectsGrid = styled.section`
     width: 80vw;
     margin: auto;
-    margin-bottom: 128px;
+    margin-bottom: 64px;
   `;
 
   const ProjectItem = styled.section`
@@ -52,7 +52,7 @@ export default function Projects() {
 
   return (
     <section id="projects">
-      <h1 className="title">Projects</h1>
+      <h1 className="title" style={{paddingTop: 50}}>Projects</h1>
       <ProjectsGrid>
         {ProjectElements.map(({id, title, technologies, description, image}, i) => (
             <ProjectItem key={i}> 

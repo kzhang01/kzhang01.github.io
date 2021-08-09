@@ -56,7 +56,7 @@ let TimelineElements = [
     title: "FRC Team 1403 Cougar Robotics",
     location: "Design Captain",
     description: [
-      "Led a team of 17 members to prototype, design, and manufacture mechanical subsystems using Autodesk Inventor to develop CAD models and a CNC machine programmed using G-code to manufacture precision parts", 
+      "Led a team of 17 members to prototype, design, and manufacture mechanical subsystems using Autodesk Inventor to develop CAD models and a CNC machine programmed using G-code to manufacture precision parts",
       "Won first district event in 8 years, won Mid-Atlantic Regional Chairman’s Award, and qualified for World Championship"
     ],
     buttonText: "Team Website",

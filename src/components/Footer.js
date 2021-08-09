@@ -4,7 +4,6 @@ import linkedin from "../assets/linkedin.svg";
 import styled from "styled-components";
 
 const Container = styled.section`
-  background-color: #ccc;
   padding: 36px 0px;
 `;
 const Links = styled.section`

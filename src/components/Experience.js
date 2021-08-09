@@ -20,9 +20,9 @@ export default function Experience() {
       <h1
         className="title"
         id="experience"
-        style={{ marginTop: 350, padding: 50 }}
+        style={{ marginTop: 300, padding: 50 }}
       >
-        Timeline
+        Experience
       </h1>
       <VerticalTimeline>
         {TimelineElements.map((element) => {
