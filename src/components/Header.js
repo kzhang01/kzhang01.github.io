@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import logo from "../assets/logo.svg";
 import { device } from "../utils/breakpoints";
-import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function Header() {
   const Container = styled.section`
@@ -69,7 +68,7 @@ export default function Header() {
       height: 2px;
       bottom: 0;
       left: 0;
-      background-color: #06D6A0;
+      background-color: #06d6a0;
       transform: scaleX(0);
       transition: transform 0.3s ease;
     }
@@ -81,58 +80,19 @@ export default function Header() {
   return (
     <Container>
       <Header>
-        <a href="/">
-          <Link
-            activeClass="active"
-            to="home"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            <LogoContainer>
-              <img src={logo} height="48px" width="48px" alt="logo" />
-              <h2>Karina Zhang</h2>
-            </LogoContainer>
-          </Link>
+        <a href="#home">
+          <LogoContainer>
+            <img src={logo} height="48px" width="48px" alt="logo" />
+            <h2>Karina Zhang</h2>
+          </LogoContainer>
         </a>
         <Links>
-          <a href="/">
-            <Link
-              activeClass="active"
-              to="home"
-              spy={true}
-              smooth={true}
-              duration={500}
-            >
-              About
-            </Link>
+          <a href="#home">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="https://drive.google.com/file/d/17Txzn0TOLuEyCZ1XKsp15pF47ndRbGgQ/view?usp=sharing">
+            Resume
           </a>
-
-          <a href="/">
-            <Link
-              activeClass="active"
-              to="experience"
-              spy={true}
-              smooth={true}
-              duration={500}
-            >
-              Experience
-            </Link>
-          </a>
-
-          <a href="/">
-            <Link
-              activeClass="active"
-              to="projects"
-              spy={true}
-              smooth={true}
-              duration={500}
-            >
-              Projects
-            </Link>
-          </a>
-          <a href="">Resume</a>
         </Links>
       </Header>
     </Container>
