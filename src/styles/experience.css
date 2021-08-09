@@ -1,4 +1,4 @@
-#experience {
+#experience_container {
     background: #3da3d5;
     padding: 24px 0px;
 }
@@ -25,6 +25,7 @@
     padding: 0.5em 1em;
     border-radius: 5px;
     color: white;
+    font-size: smaller;
 }
 
 .workButton {
@@ -42,3 +43,12 @@
 .schoolButton:hover {
     background-color: #f3bc3c;
 }
+
+@media only screen and (max-width: 1700px) {
+    .vertical-timeline-element-date {
+      display: block !important;
+      float: none !important;
+      color: rgb(44, 44, 44);
+      margin-top: 1.5em;
+    }
+  }

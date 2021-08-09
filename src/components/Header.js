@@ -48,8 +48,8 @@ export default function Header() {
       width: 35vw;
     }
     @media ${device.mobileL} {
-        width: 80vw;
-        }
+      width: 80vw;
+    }
 
     a:link,
     a:visited,
@@ -81,7 +81,7 @@ export default function Header() {
   return (
     <Container>
       <Header>
-        <a href="">
+        <a href="/">
           <Link
             activeClass="active"
             to="home"
@@ -97,8 +97,7 @@ export default function Header() {
           </Link>
         </a>
         <Links>
-
-          <a href="">
+          <a href="/">
             <Link
               activeClass="active"
               to="home"
@@ -110,7 +109,7 @@ export default function Header() {
             </Link>
           </a>
 
-          <a href="">
+          <a href="/">
             <Link
               activeClass="active"
               to="experience"
@@ -122,7 +121,7 @@ export default function Header() {
             </Link>
           </a>
 
-          <a href="">
+          <a href="/">
             <Link
               activeClass="active"
               to="projects"
@@ -133,7 +132,7 @@ export default function Header() {
               Projects
             </Link>
           </a>
-
+          <a href="">Resume</a>
         </Links>
       </Header>
     </Container>

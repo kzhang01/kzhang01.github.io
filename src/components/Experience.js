@@ -16,8 +16,8 @@ export default function Experience() {
   let schoolIconStyles = { background: "#f9c74f" }
 
   return (
-    <section id="experience">
-      <h1 className="title">Timeline</h1>
+    <section id="experience_container">
+      <h1 className="title" id="experience" style={{marginTop: 350, padding: 50}}>Timeline</h1>
       <VerticalTimeline>
         {TimelineElements.map(element => {
           let isWorkIcon = element.icon === "work"
