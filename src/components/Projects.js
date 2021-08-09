@@ -8,6 +8,9 @@ export default function Projects() {
     width: 80vw;
     margin: auto;
     margin-bottom: 64px;
+    @media screen and ${device.mobileL} {
+      width: 95vw;
+    }
   `;
 
   const ProjectItem = styled.section`
@@ -21,7 +24,7 @@ export default function Projects() {
 
   const Description = styled.section`
     width: 75%;
-    margin-right: 64px;
+    margin-right: 32px;
     text-align: left;
     padding: 32px 0px 32px 32px;
     box-sizing: border-box;
@@ -35,9 +38,10 @@ export default function Projects() {
       font-size: smaller;
       font-weight: 600;
     }
-    @media screen and ${device.tablet} {
+    @media screen and ${device.laptop} {
       margin-right: 0px;
-      padding: 8px;
+      padding: 12px;
+      width: 100%;
     }
   `;
 

@@ -20,7 +20,7 @@ export default function Experience() {
       <h1
         className="title"
         id="experience"
-        style={{ marginTop: 300, padding: 50 }}
+        style={{ marginTop: 300, padding: "50px 0px" }}
       >
         Experience
       </h1>
