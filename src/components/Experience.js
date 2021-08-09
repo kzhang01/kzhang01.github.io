@@ -1,30 +1,36 @@
-import "../styles/experience.css"
-import { ReactComponent as WorkIcon } from "../assets/work.svg"
-import { ReactComponent as SchoolIcon } from "../assets/school.svg"
+import "../styles/experience.css";
+import { ReactComponent as WorkIcon } from "../assets/work.svg";
+import { ReactComponent as SchoolIcon } from "../assets/school.svg";
 
-import TimelineElements from "./TimelineElements"
+import TimelineElements from "./TimelineElements";
 
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from "react-vertical-timeline-component"
+} from "react-vertical-timeline-component";
 
-import "react-vertical-timeline-component/style.min.css"
+import "react-vertical-timeline-component/style.min.css";
 
 export default function Experience() {
-  let workIconStyles = { background: "#06D6A0" }
-  let schoolIconStyles = { background: "#f9c74f" }
+  let workIconStyles = { background: "#06D6A0" };
+  let schoolIconStyles = { background: "#f9c74f" };
 
   return (
     <section id="experience_container">
-      <h1 className="title" id="experience" style={{marginTop: 350, padding: 50}}>Timeline</h1>
+      <h1
+        className="title"
+        id="experience"
+        style={{ marginTop: 350, padding: 50 }}
+      >
+        Timeline
+      </h1>
       <VerticalTimeline>
-        {TimelineElements.map(element => {
-          let isWorkIcon = element.icon === "work"
+        {TimelineElements.map((element) => {
+          let isWorkIcon = element.icon === "work";
           let showButton =
             element.buttonText !== undefined &&
             element.buttonText !== null &&
-            element.buttonText !== ""
+            element.buttonText !== "";
 
           return (
             <VerticalTimelineElement
@@ -40,22 +46,24 @@ export default function Experience() {
               <h5 className="vertical-timeline-element-subtitle">
                 {element.location}
               </h5>
-              <div id="description">{element.description}</div>
+              <div id="description">
+              {element.description.map((bullet, j) => <p key={j}>{bullet}</p>)}
+                </div>
               {showButton && (
                 <a
                   className={`button ${
                     isWorkIcon ? "workButton" : "schoolButton"
                   }
-`}
+                  `}
                   href={element.buttonLink}
                 >
                   {element.buttonText}
                 </a>
               )}
             </VerticalTimelineElement>
-          )
+          );
         })}
       </VerticalTimeline>
     </section>
-  )
+  );
 }
