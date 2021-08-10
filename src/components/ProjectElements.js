@@ -20,7 +20,7 @@ let ProjectElements = [
         id: 3,
         title: "Course Registration System",
         technologies: ["Java", "OOP"],
-        description: ["Developed the backend for a functional course registration system in Java that deserializes data from a csv file, follows anOOP design pattern (Abstract Factory), and uses serialization to save program state"],
+        description: ["Developed the backend for a functional course registration system in Java that deserializes data from a csv file, follows an OOP design pattern (Abstract Factory), and uses serialization to save program state"],
         image: course,
     },
 ]

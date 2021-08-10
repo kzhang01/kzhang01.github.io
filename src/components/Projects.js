@@ -40,7 +40,7 @@ export default function Projects() {
     }
     @media screen and ${device.laptop} {
       margin-right: 0px;
-      padding: 12px;
+      padding: 16px;
       width: 100%;
     }
   `;
