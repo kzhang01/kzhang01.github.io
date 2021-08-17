@@ -90,7 +90,7 @@ export default function Header() {
           <a href="#home">About</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
-          <a href="https://drive.google.com/file/d/17Txzn0TOLuEyCZ1XKsp15pF47ndRbGgQ/view?usp=sharing">
+          <a href="https://drive.google.com/file/d/1sLo3mKgLej1p9Ihp05X73M4MwkGk_0O8/view?usp=sharing">
             Resume
           </a>
         </Links>
